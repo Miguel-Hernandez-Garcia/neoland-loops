@@ -20,3 +20,46 @@ return emptyArrayCamiseta
 
 const arrayCamiseta = findCamiseta(products);
 console.log("🚀 ~ arrayCamiseta:", arrayCamiseta);
+
+/*EJERCICIOS DE LOOPS
+Iteración 2: Condicionales avanzados*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+Comprueba en cada uno de los usuarios que tenga al menos dos trimestres aprobados y añade la propiedad isApproved a true o false en consecuencia. Una vez lo tengas compruébalo con un console.log.
+Puedes usar este array para probar tu función:
+const alumns = [
+    {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
+		{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
+		{name: 'Juan Miranda', T1: false, T2: true, T3: true},
+		{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
+		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
+]
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+const alumns = [
+    {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
+	{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
+	{name: 'Juan Miranda', T1: false, T2: true, T3: true},
+	{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
+	{name: 'Raquel Benito', T1: true, T2: true, T3: true}]
+
+const twoQuartersApproved=(array) => {
+    for (let i=0; i<array.length; i++) {
+        
+    }
+}
+
+//EJERCICIO PENDIENTE
+
+/*EJERCICIOS DE LOOPS
+Iteración 3: Probando for...of*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+Usa un bucle forof para recorrer todos los destinos del array. Imprime en un console.log sus valores.
+Puedes usar este array:
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar'];
+
+for (placesToTravel[0] of placesToTravel) 
+{console.log(placesToTravel[0]);}
