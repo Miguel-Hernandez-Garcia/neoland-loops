@@ -44,9 +44,18 @@ const alumns = [
 
 const twoQuartersApproved=(array) => {
     for (let i=0; i<array.length; i++) {
-        
+       if ((array[i])[1] += (array[i])[2] == true) 
+       {array[i].isApproved=true}
+       else if ((array[i])[2] += (array[i])[3] == true ) 
+       {array[i].isApproved=true}
+       else {array[i].isApproved=false}
     }
+    return array
 }
+
+const resultTwoQuartersApproved = twoQuartersApproved(alumns);
+console.log("🚀 ~ resultTwoQuartersApproved:", resultTwoQuartersApproved);
+
 
 //EJERCICIO PENDIENTE
 
@@ -63,3 +72,26 @@ const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 
 
 for (placesToTravel[0] of placesToTravel) 
 {console.log(placesToTravel[0]);}
+
+/*EJERCICIOS DE LOOPS
+Iteración 4: Probando for...in*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+Usa un for...in para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
+const alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+const alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+}
+
+for (let key in alien) 
+{console.log(`Alien tiene la clave ${key} con valor ${alien[key]}`);}
