@@ -35,18 +35,27 @@ const alumns = [
 		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
 ]
 ----------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*const alumns = [
+const alumns = [
     {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
 	{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
 	{name: 'Juan Miranda', T1: false, T2: true, T3: true},
 	{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
 	{name: 'Raquel Benito', T1: true, T2: true, T3: true}]
 
-   const alumns.forEach(alumns =>
-    if (T1 = true && T2 = true || T2 = true && T3 = true){alumns.isApproved=true}
-    else {alumns.isApproved=false})
+alumns.forEach(alumn => {
+  let contador = 0
+  for (let clave in alumn) {
+    if (alumn[clave] === true) {
+      contador++
+    }
+  }
+  contador >= 2 ? alumn.isApproved = true : alumn.isApproved = false
+})
+
+console.log("🚀 ~ alumns:", alumns)
+
     
-//EJERCICIO PENDIENTE*/
+//EJERCICIO PENDIENTE
 
 /*EJERCICIOS DE LOOPS
 Iteración 3: Probando for...of*/
